@@ -1,0 +1,23 @@
+; Godot 4 project config for donbass_bang_bang.
+; See memory ddb-overview / ddb-architecture for the design.
+
+config_version=5
+
+[application]
+
+config/name="donbass_bang_bang"
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://assets/icon.svg"
+
+[display]
+
+; Portrait-ish phone default; real device will override.
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/handheld/orientation=1
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
